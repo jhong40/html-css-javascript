@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to make a BUTTON eleent.</p>
+
+<button onclick="myFunction()">Try click</button>
+<script>
+function myFunction() {
+//create "abc" button, create text string, create <br>
+  var btn = document.createElement("BUTTON");
+  btn.innerText="abc"
+  document.body.appendChild(btn);
+  
+  var newContent = document.createTextNode("Hi there and greetings!"); 
+  var newBr=document.createElement("BR");
+  
+  document.body.appendChild(newContent); 
+  document.body.appendChild(newBr);   
+}
+</script>
+
+</body>
+</html>
